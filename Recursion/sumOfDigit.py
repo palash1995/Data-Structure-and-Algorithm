@@ -6,9 +6,12 @@ Created on Thu Aug 31 20:58:08 2023
 @author: palashchaudhari
 """
 
-def sumOfDigit(n):
+def sum_of_digit( n ):
     if n == 0:
-        return
-    return (n//10) + (n%10)
+        return 0
+    return (n % 10 + sum_of_digit(int(n / 10)))
 
-sumOfDigit(32)
+# Driven code to check above
+num = 12345
+result = sum_of_digit(num)
+print("Sum of digits in",num,"is", result)
