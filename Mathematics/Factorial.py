@@ -13,4 +13,5 @@ def fact(number):
 
 if __name__ == '__main__':
     number = 6
+
     print(fact(number))
